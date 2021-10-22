@@ -54,7 +54,7 @@ const httpServer = http.createServer((req, res) => {
             res.write(responseObj);
             res.end();
 
-            console.log(`the url visited was, ${trimedPath} and the method is ${method}`);
+            console.log(`the url visited was '${trimedPath}', and the method was '${method}'`);
         });
     });
 });
@@ -67,7 +67,6 @@ httpServer.listen(8080, () => {
 const router = {
     ping : routeHandler.ping,
     books : routeHandler.Books,
+    users: routeHandler.Users,
     notfound : routeHandler.notfound
 }
-
-
