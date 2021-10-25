@@ -1,0 +1,26 @@
+[
+   {
+      "id": "1",
+      "name": "The Book",
+      "author": "The Author",
+      "publisher": "The Publisher",
+      "price": 19.99,
+      "copies": 1
+   },
+   {
+      "id": "1qrklax9f5qdbvkqsdfhxujhjunv3j",
+      "name": "Learning JavaScript Design Patterns",
+      "author": "Addy Osmani",
+      "publisher": "O'Reilly Publishing",
+      "price": 19.99,
+      "copies": 10
+   },
+   {
+      "id": "42t0lszslurijg07i0hy7hlbaira8j",
+      "name": "Eloquent JavaScript",
+      "author": "Marijn Haverbeke",
+      "publisher": "Marijn Haverbeke Publishing",
+      "price": 29.99,
+      "copies": 15
+   }
+]

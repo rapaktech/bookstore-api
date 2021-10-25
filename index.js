@@ -59,8 +59,10 @@ const httpServer = http.createServer((req, res) => {
     });
 });
 
+const port = process.env.PORT || 8080;
+
 //start listening on port 8080
-httpServer.listen(8080, () => {
+httpServer.listen(port, () => {
     console.log("server is listening on port 8080");
 });
 
