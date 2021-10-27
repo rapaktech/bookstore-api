@@ -8,11 +8,15 @@ A bookstore RESTful API built in Node.js
 
 * To register as a new user to the book store, send a POST request to localhost:8080/users, with a JSON object:
 
-{
-    "username": "non-spaced string, unique",
-    "firstname": "non-spaced string, non-unique",
-    "lastname": "non-spaced string, non-unique",
-}
+    ```
+
+        {
+            "username": "non-spaced string, unique",
+            "firstname": "non-spaced string, non-unique",
+            "lastname": "non-spaced string, non-unique",
+        }
+
+    ```
 
 **Admin:**
 
