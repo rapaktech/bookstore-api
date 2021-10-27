@@ -1,6 +1,6 @@
-/**
- * Entry file to out application
- */
+/*
+    * Entry file to out application
+*/
 
 const http = require('http');
 const url = require('url');
