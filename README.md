@@ -101,7 +101,7 @@ A bookstore RESTful API built in Node.js
     ``` JSON
 
         {
-            "username": null
+            "username": "registered user's username (string)"
         }
 
     ```
