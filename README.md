@@ -106,17 +106,17 @@ A bookstore RESTful API built in Node.js
 
     ```
 
-  * To lend a book, send a GET request to localhost:8080/books?borrow=yes, with a JSON object:
+* To lend a book, send a GET request to localhost:8080/books?borrow=yes, with a JSON object:
 
-    ``` JSON
+``` JSON
 
-        {
-            "username": "registered user's username (string)",
-            "name": "Name of book (string)",
-            "author": "Author of book (string)"
-        }
+    {
+        "username": "registered user's username (string)",
+        "name": "Name of book (string)",
+        "author": "Author of book (string)"
+    }
 
-    ```
+```
 
 * To view all the books you've borrowed, send a GET request to localhost:8080/users, with a JSON object:
 
