@@ -8,7 +8,7 @@ A bookstore RESTful API built in Node.js
 
 * To register as a new user to the book store, send a POST request to localhost:8080/users, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": "non-spaced string, unique",
@@ -22,7 +22,7 @@ A bookstore RESTful API built in Node.js
 
 * To add a new book to the library, send a POST request to localhost:8080/books, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": "admin",
@@ -37,7 +37,7 @@ A bookstore RESTful API built in Node.js
 
 * To view full information and IDs on books available in the bookstore, send a GET request to localhost:8080/books, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": "admin"
@@ -47,7 +47,7 @@ A bookstore RESTful API built in Node.js
 
 * To update a particular book available, send a PUT request to localhost:8080/books, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": "admin",
@@ -63,7 +63,7 @@ A bookstore RESTful API built in Node.js
 
 * To delete a particular book from the library, send a DELETE request to localhost:8080/books, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": "admin",
@@ -74,7 +74,7 @@ A bookstore RESTful API built in Node.js
 
 * To update a particular user, send a PUT request to localhost:8080/users, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": "registered user's username (string)",
@@ -86,7 +86,7 @@ A bookstore RESTful API built in Node.js
 
 * To delete a particular user, send a DELETE request to localhost:8080/users, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": "registered user's username (string)"
@@ -98,17 +98,17 @@ A bookstore RESTful API built in Node.js
 
 * To view all books available in the bookstore, send a GET request to localhost:8080/books, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": null
         }
 
     ```
-    
+
   * To lend a book, send a GET request to localhost:8080/books?borrow=yes, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": "registered user's username (string)",
@@ -120,7 +120,7 @@ A bookstore RESTful API built in Node.js
 
 * To view all the books you've borrowed, send a GET request to localhost:8080/users, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": "registered user's username (string)"
@@ -130,7 +130,7 @@ A bookstore RESTful API built in Node.js
 
 * To return a book, send a PUT request to localhost:8080/books?return=yes, with a JSON object:
 
-    ```
+    ``` JSON
 
         {
             "username": "registered user's username (string)",
@@ -139,4 +139,5 @@ A bookstore RESTful API built in Node.js
         }
 
     ```
+
 **Thank you!!!**
