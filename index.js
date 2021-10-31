@@ -12,7 +12,7 @@ const httpServer = http.createServer((req, res) => {
     const parsedurl = url.parse(req.url, true);
     //get the path name
     const pathname = parsedurl.pathname;
-    const trimedPath = pathname.replace(/^\/+|\/+$/g, "");
+    const trimmedPath = pathname.replace(/^\/+|\/+$/g, "");
     //get the Http Method
     const method = req.method.toLowerCase();
     //get the query string
@@ -29,17 +29,21 @@ const httpServer = http.createServer((req, res) => {
     req.on('end', () => {
         buffer += decoder.end();
 
-        const parsedPayload = JSON.parse(buffer);
+        const parsedPayload = null;
+
+        if (buffer !== '') {
+            parsedPayload = JSON.parse(buffer);
+        }
 
         const data = {
-            trimedPath: trimedPath,
+            trimmedPath: trimmedPath,
             query: queryStringObj,
             method: method,
             headers: headers,
             payload: parsedPayload
         };
 
-        const chosenHandler = typeof (router[trimedPath]) !== 'undefined' ? router[trimedPath] : router.notfound;
+        const chosenHandler = typeof (router[trimmedPath]) !== 'undefined' ? router[trimmedPath] : router.notfound;
         //use the chosen handler to handle the request
         chosenHandler(data, (statusCode, result) => {
 
@@ -54,7 +58,7 @@ const httpServer = http.createServer((req, res) => {
             res.write(responseObj);
             res.end();
 
-            console.log(`the url visited was '${trimedPath}', and the method was '${method}'`);
+            console.log(`the url visited was '${trimmedPath}', and the method was '${method}'`);
         });
     });
 });

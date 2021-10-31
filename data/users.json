@@ -1,20 +1,26 @@
 [
-   {
-      "username": "admin",
-      "firstname": "The",
-      "lastname": "Administator",
-      "books": []
-   },
-   {
-      "username": "janmarais",
-      "firstname": "Jan",
-      "lastname": "Marais",
-      "books": []
-   },
-   {
-      "username": "rapak",
-      "firstname": "Colonel",
-      "lastname": "Rapak",
-      "books": []
-   }
+    {
+        "username": "admin",
+        "firstname": "The",
+        "lastname": "Administator",
+        "books": []
+    },
+    {
+        "username": "janmarais",
+        "firstname": "Jan",
+        "lastname": "Marais",
+        "books": []
+    },
+    {
+        "username": "rapak",
+        "firstname": "Colonel",
+        "lastname": "Rapak",
+        "books": []
+    },
+    {
+        "username": "jimezesinachi",
+        "firstname": "Jim",
+        "lastname": "Ezesinachi",
+        "books": []
+    }
 ]
